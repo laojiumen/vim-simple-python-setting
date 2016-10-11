@@ -3,13 +3,13 @@
 自用的python风格的vimrc
 
 
-# 检查vim是否支持python
+## 1 检查vim是否支持python
 
 vim --version
 
-# 执行setup.sh
+## 2 执行setup.sh
 
-# 插件列表
+## 3 插件列表
 
 'davidhalter/jedi-vim' python自动补全
 
