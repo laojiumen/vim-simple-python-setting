@@ -22,6 +22,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'tpope/vim-fugitive'
 
+"Plugin 'ivanov/vim-ipython'
+
 "Plugin 'jnurmine/Zenburn'
 
 "Plugin 'altercation/vim-colors-solarized'
@@ -56,7 +58,32 @@ syntax on
 let mapleader = "." 
 let g:mapleader = "." 
 let g:nerdtree_tabs_open_on_console_startup=1
+let NERDTreeIgnore=['\.pyc']
 map <leader>n <plug>NERDTreeTabsToggle <CR> 
 
 set nu
-set clipboard=unnamed
+set clipboard+=unnamed
+
+set cul
+set shortmess=atI
+set ruler
+set showcmd
+set showmatch
+
+
+
+"新建.c,.h,.sh,.java文件，自动插入文件头 
+autocmd BufNewFile *.cpp,*.[ch],*.sh,*.rb,*.java,*.py exec ":call SetTitle()" 
+""定义函数SetTitle，自动插入文件头 
+func SetTitle() 
+	"如果文件类型为.sh文件 
+	if &filetype == 'sh' 
+		call setline(1,"\#!/bin/bash") 
+		call append(line("."), "") 
+        elseif &filetype == 'python'
+        	call setline(1,"#!/usr/bin/env python")
+	        call append(line("."),"# coding=utf-8")
+	    	call append(line(".")+1, "") 
+    	endif
+endfunc 
+autocmd BufNewFile * normal G
