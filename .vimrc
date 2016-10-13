@@ -62,7 +62,7 @@ let NERDTreeIgnore=['\.pyc']
 map <leader>n <plug>NERDTreeTabsToggle <CR> 
 
 set nu
-set clipboard+=unnamed
+set clipboard=unnamedplus
 
 set cul
 set shortmess=atI
