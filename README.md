@@ -28,3 +28,8 @@ vim --version
 'kien/ctrlp.vim' 全局搜索文件
 
 'tpope/vim-fugitive' git插件(基本不用)
+
+## 4 change log
+
+20161015
+> add taglist. 快捷键F8,代码查看利器 

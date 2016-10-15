@@ -62,6 +62,8 @@ let g:mapleader = "."
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeIgnore=['\.pyc']
 map <F10> :NERDTreeToggle<CR>
+let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口k
 nnoremap <F8> :TlistToggle<CR>
 set nu
 set clipboard=unnamedplus
