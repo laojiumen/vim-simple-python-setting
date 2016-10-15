@@ -29,6 +29,9 @@ vim --version
 
 'tpope/vim-fugitive' git插件(基本不用)
 
+'vim-scripts/taglist.vim' taglist 代码查看
+
+
 ## 4 change log
 
 20161015
