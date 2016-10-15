@@ -1,4 +1,5 @@
 sudo apt remove -y vim
+sudo mv /usr/bin/vim /usr/bin/vim_bak
 sudo apt install -y vim-gnome
 
 git clone https://github.com/vim/vim.git
