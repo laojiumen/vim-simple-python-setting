@@ -22,6 +22,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'vim-scripts/taglist.vim'
+
 "Plugin 'ivanov/vim-ipython'
 
 "Plugin 'jnurmine/Zenburn'
@@ -60,6 +62,7 @@ let g:mapleader = "."
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeIgnore=['\.pyc']
 map <F10> :NERDTreeToggle<CR>
+nnoremap <F8> :TlistToggle<CR>
 set nu
 set clipboard=unnamedplus
 
