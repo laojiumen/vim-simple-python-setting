@@ -7,6 +7,8 @@
 
 vim --version
 
+> 若不支持，执行setup_vimpython.sh,!!!修改里面python config dir
+
 ## 2 执行setup.sh
 
 ## 3 插件列表
