@@ -59,8 +59,7 @@ let mapleader = "."
 let g:mapleader = "." 
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeIgnore=['\.pyc']
-map <leader>n <plug>NERDTreeTabsToggle <CR> 
-
+map <F10> :NERDTreeToggle<CR>
 set nu
 set clipboard=unnamedplus
 
