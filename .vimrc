@@ -6,13 +6,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 
-Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'vim-scripts/indentpython.vim'
 
 Plugin 'scrooloose/syntastic'
 
-Plugin 'nvie/vim-flake8'
+"Plugin 'nvie/vim-flake8'
 
 Plugin 'scrooloose/nerdtree'
 
@@ -23,6 +23,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'vim-scripts/taglist.vim'
+
+Plugin 'klen/python-mode'
 
 "Plugin 'ivanov/vim-ipython'
 
